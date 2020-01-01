@@ -1,0 +1,46 @@
+﻿@model MVC_RW_Demo.Models.Employee
+
+@{
+    ViewBag.Title = "Details";
+    if (Session["SSID"] == null)
+    {
+       // Response.Redirect("Home/Login");
+    }
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Employee</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DeptNo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DeptNo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Basic)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Basic)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    <!---->@Html.ActionLink("Edit", "Edit", new { id = Model.EmpID }) |-->
+    @Html.ActionLink("Back to List", "Index")
+</p>
