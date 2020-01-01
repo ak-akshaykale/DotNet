@@ -1,0 +1,10 @@
+(To Create Strong Name key)
+sn -k keyname.snk
+
+(in the Project property Sign The key)
+
+(To install)
+gacutil /i AssemblyName.dll
+
+(To uninstall)
+gacutil /u AssemblyName

@@ -1,0 +1,20 @@
+﻿<Window x:Class="WPF_Database_Basics.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Database_Basics"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="912">
+    <Grid>
+        <DataGrid x:Name="dgEmps" Height="285" Margin="56,19,288,0" VerticalAlignment="Top" Width="560" FontSize="14"/>
+        <Button x:Name="btnFill" Content="Fill" HorizontalAlignment="Left" Margin="655,49,0,0" VerticalAlignment="Top" Width="103" Click="BtnFill_Click" FontSize="14" Height="27"/>
+        <Button x:Name="btnUpdate" Content="Update" HorizontalAlignment="Left" Margin="655,94,0,0" VerticalAlignment="Top" Width="103" Click="BtnUpdate_Click" FontSize="14" Height="27"/>
+        <Button x:Name="btnFilter" Content="Filter" HorizontalAlignment="Left" Margin="655,145,0,0" VerticalAlignment="Top" Width="103" Click="BtnFilter_Click" FontSize="14" Height="26"/>
+        <TextBox x:Name="txtFilter" HorizontalAlignment="Left" Height="27" Margin="655,196,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="103"/>
+        <Button x:Name="btnClearFilter" Content="Clear Filter" HorizontalAlignment="Left" Margin="655,244,0,0" VerticalAlignment="Top" Width="103" Click="BtnClearFilter_Click" FontSize="14" Height="34"/>
+        <Button x:Name="btnXmlStore" Content="Xml Store" HorizontalAlignment="Left" Margin="118,347,0,0" VerticalAlignment="Top" Width="224" Click="BtnXmlStore_Click"/>
+        <Button x:Name="btnXmlRestore" Content="Xml Re-Store"  HorizontalAlignment="Left" Margin="397,347,0,0" VerticalAlignment="Top" Width="294" Click="BtnXmlRestore_Click"/>
+
+    </Grid>
+</Window>
