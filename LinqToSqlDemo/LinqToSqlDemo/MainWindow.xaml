@@ -1,0 +1,33 @@
+﻿<Window x:Class="LinqToSqlDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LinqToSqlDemo"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="308" Width="536">
+    <Grid Height="298" VerticalAlignment="Top" Margin="0,0,2,0">
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="137" Margin="5,67,0,0" Stroke="Black" VerticalAlignment="Top" Width="309"/>
+
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="57" Margin="5,209,0,0" Stroke="Black" VerticalAlignment="Top" Width="511"/>
+
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="137" Margin="319,67,0,0" Stroke="Black" VerticalAlignment="Top" Width="197"/>
+
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="58" Margin="5,4,0,0" Stroke="Black" VerticalAlignment="Top" Width="511"/>
+
+        <Button Content="Insert" HorizontalAlignment="Left" Height="33" Margin="104,219,0,0" VerticalAlignment="Top" Width="117" Click="Button_Click"/>
+        <Label Content="EmpID" HorizontalAlignment="Left" Height="24" Margin="26,19,0,0" VerticalAlignment="Top" Width="89"/>
+        <TextBox x:Name="txtEmpID" HorizontalAlignment="Left" Height="24" Margin="158,19,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="141"/>
+        <Label Content="Name" HorizontalAlignment="Left" Height="24" Margin="26,86,0,0" VerticalAlignment="Top" Width="89"/>
+        <TextBox x:Name="txtName" HorizontalAlignment="Left" Height="24" Margin="158,86,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="141"/>
+        <Label Content="DeptNo" HorizontalAlignment="Left" Height="24" Margin="26,130,0,0" VerticalAlignment="Top" Width="89"/>
+        <TextBox x:Name="txtDeptNo" HorizontalAlignment="Left" Height="24" Margin="158,130,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="141"/>
+        <Label Content="Basic" HorizontalAlignment="Left" Height="24" Margin="26,174,0,0" VerticalAlignment="Top" Width="89"/>
+        <TextBox x:Name="txtBasic" HorizontalAlignment="Left" Height="24" Margin="158,174,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="141"/>
+        <Button Content="Delete" HorizontalAlignment="Left" Margin="329,132,0,0" VerticalAlignment="Top" Width="155" Height="34" Click="Button_Click_3"/>
+        <Button Content="Update" HorizontalAlignment="Left" Margin="329,83,0,0" VerticalAlignment="Top" Width="155" Height="33" Click="Button_Click_1"/>
+        <Button Content="Fetch" HorizontalAlignment="Left" Margin="329,19,0,0" VerticalAlignment="Top" Width="155" Height="30" Click="Button_Click_2"/>
+        <Button Content="Clear All" HorizontalAlignment="Left" Height="33" Margin="280,219,0,0" VerticalAlignment="Top" Width="129" Click="Button_Click_4"/>
+
+    </Grid>
+</Window>
