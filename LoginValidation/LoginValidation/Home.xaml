@@ -1,0 +1,21 @@
+﻿<Window x:Class="LoginValidation.Home"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LoginValidation"
+        mc:Ignorable="d"
+        Title="Home" Height="594" Width="865">
+    <Grid Margin="0,0,0,-79">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="59*"/>
+            <RowDefinition Height="87*"/>
+            <RowDefinition Height="273*"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="btnEmp" Content="Manged Employee" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="156" Height="35"/>
+        <Button x:Name="btnEmp_Copy" Content="Manged Department" HorizontalAlignment="Left" Margin="185,10,0,0" VerticalAlignment="Top" Width="161" Height="35"/>
+        <DataGrid x:Name="dgMaster" HorizontalAlignment="Left" Height="293" Margin="21,79,0,0" VerticalAlignment="Top" Width="557" Grid.RowSpan="3"/>
+        <Rectangle Fill="#FF6161F1" HorizontalAlignment="Left" Height="250" Margin="657,10,0,0" Grid.Row="1" Grid.RowSpan="2" Stroke="Black" VerticalAlignment="Top" Width="163"/>
+
+    </Grid>
+</Window>
